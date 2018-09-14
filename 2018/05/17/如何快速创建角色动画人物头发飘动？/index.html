@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="前言：最近撸了几个角色动画，有一些小心得，迫不及待的想分享给大家，希望对大家在做角色动画的时候有所帮助。
+今天就给大家分享下，角色动画人物头发飘动的几个常用做法。
+方法01-直接硬干（修改路径）：第一个动画：
+第一个动画的人物头像使用的直接修改路径的方式：
+直接硬干，可以看到我K了几个形态的关键帧，">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="moran">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="如何快速创建角色动画人物头发飘动？"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="MotionPlus"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>如何快速创建角色动画人物头发飘动？ - MotionPlus</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!--Favicon-->
+    
+
+</head>
+
+<body>
+
+<!-- Menu -->
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <a href="/">MotionPlus</a>
+    </div><!-- end logo -->
+
+    <div id="menu_icon"></div>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/">首页</a>
+            </li>
+            
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/about">关于我</a>
+            </li>
+            
+        </ul>
+    </nav><!-- end navigation menu -->
+
+    <div class="footer clearfix">
+        <ul class="social clearfix">
+            
+            
+                <li><a href="https://www.facebook.com/" class="fb" target="_blank" data-title="Facebook"></a></li>
+            
+            
+                <li><a href="https://www.behance.net/" class="behance" target="_blank" data-title="Behance"></a></li>
+            
+            
+                <li><a href="https://plus.google.com/+Pixelhint/posts" class="google" target="_blank" data-title="Google+"></a></li>
+            
+            
+                <li><a href="https://dribbble.com/moranart" class="dribble" target="_blank" data-title="Dribble"></a></li>
+            
+            
+            
+            
+        </ul><!-- end social -->
+
+        <div class="rights">
+            <p>Copyright © 2014 magnetic.</p>
+            <p>Template by <a href="http://pixelhint.com/magnetic-free-html5-responsive-photography-website-template/">Pixelhint.com</a></p>
+            <p>Hexo Theme by <a href="http://www.codeblocq.com/">Jonathan K.</a></p>
+        </div><!-- end rights -->
+    </div ><!-- end footer -->
+</header><!-- end header -->
+
+
+<!-- Main Content -->
+<section class="main clearfix">
+
+    <section class="top" style="background: url('http://ww1.sinaimg.cn/large/9c681425gy1freay12nbbj21060r2ain.jpg');">
+        <div class="wrapper content_header clearfix">
+            
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a class="previous disabled"></a></li>
+        
+        <li><a href="/" class="grid" data-title="Portfolio"></a></li>
+        
+        <li><a href="/2018/05/16/hello-world/" class="next" data-title="Hello World"></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+            <h1 class="title">如何快速创建角色动画人物头发飘动？</h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <h3 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h3><p>最近撸了几个角色动画，有一些小心得，迫不及待的想分享给大家，希望对大家在做角色动画的时候有所帮助。</p>
+<p>今天就给大家分享下，角色动画人物头发飘动的几个常用做法。</p>
+<h3 id="方法01-直接硬干（修改路径）："><a href="#方法01-直接硬干（修改路径）：" class="headerlink" title="方法01-直接硬干（修改路径）："></a>方法01-直接硬干（修改路径）：</h3><p>第一个动画：</p>
+<p><img src="http://ww1.sinaimg.cn/large/9c681425gy1frdlsld633g20m80goqv6.gif" alt=""><br>第一个动画的人物头像使用的直接修改路径的方式：<br><img src="http://ww1.sinaimg.cn/large/9c681425gy1frear9g556j20zy0s2wy2.jpg" alt=""></p>
+<p>直接硬干，可以看到我K了几个形态的关键帧，然后循环就好了。想要更细腻一点，就需要K多一些关键帧。</p>
+<p>这个方法真的很常用，而且细调之后，就很真实。</p>
+<h3 id="方法02-借助脚本（AutoSway）："><a href="#方法02-借助脚本（AutoSway）：" class="headerlink" title="方法02-借助脚本（AutoSway）："></a>方法02-借助脚本（AutoSway）：</h3><p>第二个动画：</p>
+<p><img src="http://ww1.sinaimg.cn/large/9c681425gy1freb339dmeg20m80go1kz.gif" alt=""></p>
+<p>AutoSway是一个可以0K帧做出头发飘动的神脚本，自从有了它，一口气K5个头发动画不费劲。</p>
+<p><img src="http://ww1.sinaimg.cn/large/9c681425gy1freati0od0j20zw0nak7q.jpg" alt=""></p>
+<h4 id="使用方法如下："><a href="#使用方法如下：" class="headerlink" title="使用方法如下："></a>使用方法如下：</h4><p>01-选择需要飘动的头发图层，用AE的操控点工具，打上几个操控点：</p>
+<p><img src="http://ww1.sinaimg.cn/large/9c681425gy1freau9kr6bj20zw0hy4am.jpg" alt=""></p>
+<p>02-择头发这个图层，点击AutoSway脚本的 Apply ：</p>
+<p><img src="http://ww1.sinaimg.cn/large/9c681425gy1freauwkjsuj20xa0newmr.jpg" alt=""></p>
+<p>头发飘动的动画就搞定咯，是不是很简单~~</p>
+<p>那么这次的动效小技巧就到这里咯，我们下次再见~~</p>
+<p>大家有什么问题欢迎，留言给我，或者添加我个人微信:moranart ，进行交流~~~</p>
+<p>需要该教程使用到的脚本？关注 墨染动效 公众号，回复 AutoSway 即可获得脚本下载链接~~</p>
+
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
+                
+
+
+
+
+    <hr />
+    <h3>Comments:</h3>
+    <div id="valine"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine@1.1.7/dist/Valine.min.js'></script>
+    <script>
+    new Valine({
+        el: '#valine' ,
+        notify:false,
+        verify:false,
+        app_id: 'B3XR47BRSQXjYb8e3WcVexaA-gzGzoHsz',
+        app_key: 'hunAisz77Q1k0eBQRoJ615A7',
+        placeholder: '友善发言的人，运气都不会太差。',
+        path:window.location.pathname,
+        avatar:'mm' 
+    });
+    </script>
+
+            </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Custom Code -->
+<script src="/js/main.js"></script>
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+
+</html>
